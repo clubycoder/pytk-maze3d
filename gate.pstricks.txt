@@ -1,0 +1,135 @@
+\documentclass[10pt]{article}
+\usepackage{pstricks-add}
+\pagestyle{empty}
+\begin{document}
+\newrgbcolor{wzrbss}{0.4117647058823529 0.10588235294117647 0.13333333333333333}
+\newrgbcolor{xdxdff}{0.49019607843137253 0.49019607843137253 1}
+\newrgbcolor{vbvtxd}{0.3568627450980392 0.3254901960784314 0.49019607843137253}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.6299653643599138,-0.47340550759497335)(0.6866389074741943,0.348643483882509)
+\multips(0,0)(0,0.1){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-0.6299653643599138,0)(0.6866389074741943,0)}
+\multips(0,0)(0.1,0){14}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.47340550759497335)(0,0.348643483882509)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.1,Dy=0.1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.6299653643599138,-0.47340550759497335)(0.6866389074741943,0.348643483882509)
+\pspolygon[linewidth=0.8pt,linecolor=wzrbss,fillcolor=wzrbss,fillstyle=solid,opacity=1](-0.3,-0.5)(-0.5,-0.5)(-0.5,0.5)(-0.3,0.6)
+\pspolygon[linewidth=0.8pt,linecolor=wzrbss,fillcolor=wzrbss,fillstyle=solid,opacity=1](-0.1,-0.5)(-0.3,-0.5)(-0.3,0.6)(-0.1,0.645)
+\pspolygon[linewidth=0.8pt,linecolor=wzrbss,fillcolor=wzrbss,fillstyle=solid,opacity=1](0.1,-0.5)(-0.1,-0.5)(-0.1,0.645)(0,0.655)(0.1,0.645)
+\pspolygon[linewidth=0.8pt,linecolor=wzrbss,fillcolor=wzrbss,fillstyle=solid,opacity=1](0.3,-0.5)(0.1,-0.5)(0.1,0.645)(0.3,0.6)
+\pspolygon[linewidth=0.8pt,linecolor=wzrbss,fillcolor=wzrbss,fillstyle=solid,opacity=1](0.5,-0.5)(0.3,-0.5)(0.3,0.6)(0.5,0.5)
+\pspolygon[linewidth=0.8pt,linecolor=vbvtxd,fillcolor=vbvtxd,fillstyle=solid,opacity=1](-0.5,0.1)(0.5,0.1)(0.5,0)(-0.5,0)
+\pspolygon[linewidth=0.8pt,linecolor=vbvtxd,fillcolor=vbvtxd,fillstyle=solid,opacity=1](0,0)(-0.1,-0.1)(0,-0.2)(0.1,-0.1)(0,0)(0.02,-0.15)(-0.02,-0.15)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.3,-0.5)(-0.5,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.5,-0.5)(-0.5,0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.5,0.5)(-0.3,0.6)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.3,0.6)(-0.3,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.1,-0.5)(-0.3,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.3,-0.5)(-0.3,0.6)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.3,0.6)(-0.1,0.645)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.1,0.645)(-0.1,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.1,-0.5)(-0.1,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.1,-0.5)(-0.1,0.645)
+\psline[linewidth=0.8pt,linecolor=wzrbss](-0.1,0.645)(0,0.655)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0,0.655)(0.1,0.645)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.1,0.645)(0.1,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.3,-0.5)(0.1,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.1,-0.5)(0.1,0.645)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.1,0.645)(0.3,0.6)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.3,0.6)(0.3,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.5,-0.5)(0.3,-0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.3,-0.5)(0.3,0.6)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.3,0.6)(0.5,0.5)
+\psline[linewidth=0.8pt,linecolor=wzrbss](0.5,0.5)(0.5,-0.5)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](-0.5,0.1)(0.5,0.1)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](0.5,0.1)(0.5,0)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](0.5,0)(-0.5,0)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](-0.5,0)(-0.5,0.1)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](0,0)(-0.1,-0.1)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](-0.1,-0.1)(0,-0.2)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](0,-0.2)(0.1,-0.1)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](0.1,-0.1)(0,0)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](0,0)(0.02,-0.15)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](0.02,-0.15)(-0.02,-0.15)
+\psline[linewidth=0.8pt,linecolor=vbvtxd](-0.02,-0.15)(0,0)
+\begin{scriptsize}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.3,-0.5)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$A$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.5,-0.5)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$B$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.5,0.5)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$C$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.3,0.6)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$D$}}
+\rput[bl](-0.4005871780282918,-0.4787090494754732){\wzrbss{$a$}}
+\rput[bl](-0.47881442076566577,0.0012614907097664477){\wzrbss{$b$}}
+\rput[bl](-0.3913059797374169,0.5302897932896301){\wzrbss{$c$}}
+\rput[bl](-0.3223599352909178,0.05031925310439039){\wzrbss{$d$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.1,-0.5)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$E$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.1,0.645)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$F$}}
+\rput[bl](-0.20037847203941936,-0.4787090494754732){\wzrbss{$e$}}
+\rput[bl](-0.2799316002469183,0.05031925310439039){\wzrbss{$a_1$}}
+\rput[bl](-0.1964008156290444,0.6005617232062536){\wzrbss{$d_1$}}
+\rput[bl](-0.12215122930204536,0.0728593060965149){\wzrbss{$f$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.1,-0.5)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$G$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0,0.655)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$H$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.1,0.645)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$I$}}
+\rput[bl](-0.0001697660505469242,-0.4787090494754732){\wzrbss{$g$}}
+\rput[bl](-0.0797228942580459,0.0728593060965149){\wzrbss{$e_1$}}
+\rput[bl](-0.04790164297504631,0.6284053180788779){\wzrbss{$f_1$}}
+\rput[bl](0.047562110873952464,0.6284053180788779){\wzrbss{$h$}}
+\rput[bl](0.07805747668682707,0.0728593060965149){\wzrbss{$i$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.3,-0.5)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$J$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.3,0.6)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$K$}}
+\rput[bl](0.1987130544682005,-0.4787090494754732){\wzrbss{$j$}}
+\rput[bl](0.12048581173082652,0.0728593060965149){\wzrbss{$g_1$}}
+\rput[bl](0.19473539805782558,0.6005617232062536){\wzrbss{$i_1$}}
+\rput[bl](0.27826618267569947,0.05031925310439039){\wzrbss{$k$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.5,-0.5)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$L$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.5,0.5)
+\rput[bl](-0.6299653643599138,0.348643483882509){\blue{$M$}}
+\rput[bl](0.39892176045707295,-0.4787090494754732){\wzrbss{$l$}}
+\rput[bl](0.3206945177196989,0.05031925310439039){\wzrbss{$j_1$}}
+\rput[bl](0.3896405621661981,0.5302897932896301){\wzrbss{$k_1$}}
+\rput[bl](0.47847488866457194,0.0012614907097664477){\wzrbss{$m$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.5,0.1)
+\rput[bl](-0.4947250464071656,0.10733232831976416){\blue{$N$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=xdxdff](0.5,0.1)
+\rput[bl](0.5049925980670715,0.10733232831976416){\xdxdff{$O$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.5,0)
+\rput[bl](0.5049925980670715,0.007890918060391305){\blue{$P$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=xdxdff](-0.5,0)
+\rput[bl](-0.4947250464071656,0.007890918060391305){\xdxdff{$Q$}}
+\rput[bl](-0.0001697660505469242,0.07948873344713976){\vbvtxd{$n$}}
+\rput[bl](0.47847488866457194,0.05031925310439039){\vbvtxd{$o$}}
+\rput[bl](-0.0001697660505469242,0.02247565823176599){\vbvtxd{$p$}}
+\rput[bl](-0.47881442076566577,0.05031925310439039){\vbvtxd{$q$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](0,0)
+\rput[bl](0.0051337758299530075,0.007890918060391305){\darkgray{$R$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.1,-0.1)
+\rput[bl](-0.09430763442942071,-0.09155049219898155){\blue{$S$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0,-0.2)
+\rput[bl](0.0051337758299530075,-0.1923177879284794){\blue{$T$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.1,-0.1)
+\rput[bl](0.1059010715594517,-0.09155049219898155){\blue{$U$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0,0)
+\rput[bl](0.0051337758299530075,0.007890918060391305){\blue{$V$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.02,-0.15)
+\rput[bl](0.025022057881827754,-0.14193414006373048){\blue{$W$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.02,-0.15)
+\rput[bl](-0.014754506221921737,-0.14193414006373048){\blue{$Z$}}
+\rput[bl](-0.06513815408667109,-0.03453741698360778){\vbvtxd{$r$}}
+\rput[bl](-0.06513815408667109,-0.16447419305585498){\vbvtxd{$s$}}
+\rput[bl](0.06479862198557725,-0.16447419305585498){\vbvtxd{$t$}}
+\rput[bl](0.06479862198557725,-0.03453741698360778){\vbvtxd{$u$}}
+\rput[bl](-0.01210273528167177,-0.07696575202760687){\vbvtxd{$v$}}
+\rput[bl](-0.0001697660505469242,-0.12867528536248077){\vbvtxd{$w$}}
+\rput[bl](0.01043731771045294,-0.07696575202760687){\vbvtxd{$z_1$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{document}
