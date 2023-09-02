@@ -18,9 +18,9 @@ class Colors:
 
 class Maze3d:
     def __init__(self):
-        self.maze_width = 11
+        self.maze_width = 21
         self.maze_width_input = None
-        self.maze_height = 11
+        self.maze_height = 21
         self.maze_height_input = None
         self.maze = None
         self.player = None
@@ -30,6 +30,8 @@ class Maze3d:
         self.canvas_width = 640
         self.canvas_height = 480
         self.message = None
+
+        self.asking = False
 
     def main(self):
         self.update()
@@ -44,18 +46,20 @@ class Maze3d:
         self.window_update()
         self.canvas_update()
         if self.maze.done:
-            time_passed = self.maze.get_time_passed()
-            time_str = "%2d:%02d" % (int(time_passed / 60), time_passed % 60)
-            play_again = tkmb.askyesno("Play again?",(
-                "Congratulations!  "
-                "You finished in %s.  "
-                "Would you like to play again?"
-            ) % (time_str))
-            if play_again:
-                self.maze = None
-                self.update()
-            else:
-                self.window.destroy()
+            if not self.asking:
+                self.asking = True
+                time_passed = self.maze.get_time_passed()
+                time_str = "%2d:%02d" % (int(time_passed / 60), time_passed % 60)
+                play_again = tkmb.askyesno("Play again?",(
+                    "Congratulations!  "
+                    "You finished in %s.  "
+                    "Would you like to play again?"
+                ) % (time_str))
+                if play_again:
+                    self.maze = None
+                    self.update()
+                else:
+                    self.window.destroy()
         else:
             # If we're not done, queue up an update in 1 second
             self.window.after(1000, lambda: self.update())
@@ -93,7 +97,7 @@ class Maze3d:
         statue_frame = tk.Frame(self.window, padx=8, pady=8, bg="#333333")
         statue_frame.grid(row=0, column=1)
 
-        self.message = tk.Label(statue_frame, text=self.maze.message, wraplength=300, justify="left", bg="#333333")
+        self.message = tk.Label(statue_frame, text=self.maze.message, wraplength=300, justify="left", bg="#333333", fg="white")
         self.message.grid(row=0, column=0)
 
         controls_frame = tk.Frame(statue_frame, bg="#333333")
@@ -117,12 +121,12 @@ class Maze3d:
             "Use the controls above or the keyboard.\n"
             "[W|A|S|D] or Arrow keys to turn and move.\n"
         )
-        tk.Label(statue_frame, text=help, wraplength=300, justify="left", bg="#333333").grid(row=2, column=0)
+        tk.Label(statue_frame, text=help, wraplength=300, justify="left", bg="#333333", fg="white").grid(row=2, column=0)
 
         tk.Button(statue_frame, text="Quit", width=6, command=self.window.destroy).grid(row=3, column=0)
         self.window.bind("<Escape>", lambda e: self.window.destroy())
 
-        tk.Label(statue_frame, text="\nConfigure Maze:", wraplength=300, justify="left", bg="#333333").grid(row=4, column=0)
+        tk.Label(statue_frame, text="\nConfigure Maze:", wraplength=300, justify="left", bg="#333333", fg="white").grid(row=4, column=0)
         generate_frame = tk.Frame(statue_frame, bg="#333333")
         generate_frame.grid(row=5, column=0)
         self.maze_width_input = tk.StringVar()
@@ -130,7 +134,7 @@ class Maze3d:
         self.maze_height_input = tk.StringVar()
         self.maze_height_input.set(str(self.maze_height))
         tk.Entry(generate_frame, textvariable=self.maze_width_input, width=6, justify="right").grid(row=0, column=0)
-        tk.Label(generate_frame, text=" x ", justify="center", bg="#333333").grid(row=0, column=1)
+        tk.Label(generate_frame, text=" x ", justify="center", bg="#333333", fg="white").grid(row=0, column=1)
         tk.Entry(generate_frame, textvariable=self.maze_height_input, width=6, justify="left").grid(row=0, column=2)
         tk.Button(statue_frame, text="Generate", width=6, command=lambda: self.setup_maze()).grid(row=6, column=0)
 
